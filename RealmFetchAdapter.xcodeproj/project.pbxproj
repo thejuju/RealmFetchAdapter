@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E008B95C25D1626B00C2A235 /* RealmFetchAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E008B94725D1626B00C2A235 /* RealmFetchAdapter.framework */; };
+		E008B95D25D1626B00C2A235 /* RealmFetchAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E008B94725D1626B00C2A235 /* RealmFetchAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E008B97725D162D800C2A235 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = E008B97625D162D800C2A235 /* DifferenceKit */; };
+		E008B97925D162DB00C2A235 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E008B97825D162DB00C2A235 /* Realm */; };
+		E008B97B25D162DD00C2A235 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E008B97A25D162DD00C2A235 /* RealmSwift */; };
+		E008B98B25D1679300C2A235 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B98A25D1679300C2A235 /* UIColor+Hex.swift */; };
+		E008B9F125D1759D00C2A235 /* RealmFetchAdapterConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9D625D1759D00C2A235 /* RealmFetchAdapterConfiguration.swift */; };
+		E008B9F225D1759D00C2A235 /* RealmInstanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9D825D1759D00C2A235 /* RealmInstanceDelegate.swift */; };
+		E008B9F325D1759D00C2A235 /* RealmFetchAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9D925D1759D00C2A235 /* RealmFetchAdapterDelegate.swift */; };
+		E008B9F425D1759D00C2A235 /* RealmFetchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9DB25D1759D00C2A235 /* RealmFetchAdapter.swift */; };
+		E008B9F525D1759D00C2A235 /* TableViewRealmFetchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9DC25D1759D00C2A235 /* TableViewRealmFetchAdapter.swift */; };
+		E008B9F625D1759D00C2A235 /* CollectionRealmFetchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9DD25D1759D00C2A235 /* CollectionRealmFetchAdapter.swift */; };
+		E008B9F725D1759D00C2A235 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9DE25D1759D00C2A235 /* LiveData.swift */; };
+		E008B9F825D1759D00C2A235 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E008B9E025D1759D00C2A235 /* Fetchable.swift */; };
+		E008BA1425D1789700C2A235 /* RealmFetchAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E008B9F025D1759D00C2A235 /* RealmFetchAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E042EA842232E7300008E567 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EA832232E72F0008E567 /* DemoCollectionViewCell.swift */; };
+		E042EA862232E7540008E567 /* DemoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EA852232E7540008E567 /* DemoHeaderCollectionReusableView.swift */; };
+		E042EAA62232EC7C0008E567 /* FetchBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EA9F2232EC7C0008E567 /* FetchBaseCollectionViewController.swift */; };
+		E042EAA72232EC7C0008E567 /* FetchSectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAA02232EC7C0008E567 /* FetchSectionCollectionViewController.swift */; };
+		E042EAA82232EC7C0008E567 /* FetchMonoColletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAA12232EC7C0008E567 /* FetchMonoColletionViewController.swift */; };
+		E042EAA92232EC7C0008E567 /* FetchBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAA32232EC7C0008E567 /* FetchBaseTableViewController.swift */; };
+		E042EAAA2232EC7C0008E567 /* FetchBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAA52232EC7C0008E567 /* FetchBaseViewController.swift */; };
+		E042EAAC2232EF980008E567 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAAB2232EF980008E567 /* DemoTableViewCell.swift */; };
+		E042EAAE2232F0660008E567 /* FetchMonoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAAD2232F0660008E567 /* FetchMonoTableViewController.swift */; };
+		E042EAB02232F23B0008E567 /* FetchSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042EAAF2232F23B0008E567 /* FetchSectionTableViewController.swift */; };
+		E04EC2E1223137EF005DC3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04EC2E0223137EF005DC3D4 /* AppDelegate.swift */; };
+		E04EC2E6223137EF005DC3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04EC2E4223137EF005DC3D4 /* Main.storyboard */; };
+		E04EC2E8223137F1005DC3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04EC2E7223137F1005DC3D4 /* Assets.xcassets */; };
+		E04EC2EB223137F1005DC3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04EC2E9223137F1005DC3D4 /* LaunchScreen.storyboard */; };
+		E04EC30C22313B7E005DC3D4 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04EC30B22313B7E005DC3D4 /* DemoModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E008B95A25D1626B00C2A235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E04EC25C22307B23005DC3D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E008B94625D1626B00C2A235;
+			remoteInfo = RealmFetchAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E04EC30022313872005DC3D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E008B95D25D1626B00C2A235 /* RealmFetchAdapter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E008B94725D1626B00C2A235 /* RealmFetchAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmFetchAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E008B98A25D1679300C2A235 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E008B9B825D1758500C2A235 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E008B9D625D1759D00C2A235 /* RealmFetchAdapterConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFetchAdapterConfiguration.swift; sourceTree = "<group>"; };
+		E008B9D825D1759D00C2A235 /* RealmInstanceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmInstanceDelegate.swift; sourceTree = "<group>"; };
+		E008B9D925D1759D00C2A235 /* RealmFetchAdapterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFetchAdapterDelegate.swift; sourceTree = "<group>"; };
+		E008B9DB25D1759D00C2A235 /* RealmFetchAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmFetchAdapter.swift; sourceTree = "<group>"; };
+		E008B9DC25D1759D00C2A235 /* TableViewRealmFetchAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRealmFetchAdapter.swift; sourceTree = "<group>"; };
+		E008B9DD25D1759D00C2A235 /* CollectionRealmFetchAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionRealmFetchAdapter.swift; sourceTree = "<group>"; };
+		E008B9DE25D1759D00C2A235 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
+		E008B9E025D1759D00C2A235 /* Fetchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		E008B9F025D1759D00C2A235 /* RealmFetchAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmFetchAdapter.h; sourceTree = "<group>"; };
+		E008BA0925D1769100C2A235 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		E042EA832232E72F0008E567 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E042EA852232E7540008E567 /* DemoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E042EA9F2232EC7C0008E567 /* FetchBaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		E042EAA02232EC7C0008E567 /* FetchSectionCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchSectionCollectionViewController.swift; sourceTree = "<group>"; };
+		E042EAA12232EC7C0008E567 /* FetchMonoColletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMonoColletionViewController.swift; sourceTree = "<group>"; };
+		E042EAA32232EC7C0008E567 /* FetchBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchBaseTableViewController.swift; sourceTree = "<group>"; };
+		E042EAA52232EC7C0008E567 /* FetchBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchBaseViewController.swift; sourceTree = "<group>"; };
+		E042EAAB2232EF980008E567 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		E042EAAD2232F0660008E567 /* FetchMonoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMonoTableViewController.swift; sourceTree = "<group>"; };
+		E042EAAF2232F23B0008E567 /* FetchSectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSectionTableViewController.swift; sourceTree = "<group>"; };
+		E04EC2DE223137EF005DC3D4 /* RealmFetchAdapterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmFetchAdapterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04EC2E0223137EF005DC3D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E04EC2E5223137EF005DC3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E04EC2E7223137F1005DC3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E04EC2EA223137F1005DC3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E04EC2EC223137F1005DC3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04EC30B22313B7E005DC3D4 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
+		E09AAE9825D017F800E5D5A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E008B94425D1626B00C2A235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E008B97B25D162DD00C2A235 /* RealmSwift in Frameworks */,
+				E008B97925D162DB00C2A235 /* Realm in Frameworks */,
+				E008B97725D162D800C2A235 /* DifferenceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EC2DB223137EF005DC3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E008B95C25D1626B00C2A235 /* RealmFetchAdapter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E008B9D525D1759D00C2A235 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E008B9D625D1759D00C2A235 /* RealmFetchAdapterConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E008B9D725D1759D00C2A235 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E008B9D825D1759D00C2A235 /* RealmInstanceDelegate.swift */,
+				E008B9D925D1759D00C2A235 /* RealmFetchAdapterDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E008B9DA25D1759D00C2A235 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E008B9DB25D1759D00C2A235 /* RealmFetchAdapter.swift */,
+				E008B9DC25D1759D00C2A235 /* TableViewRealmFetchAdapter.swift */,
+				E008B9DD25D1759D00C2A235 /* CollectionRealmFetchAdapter.swift */,
+				E008B9DE25D1759D00C2A235 /* LiveData.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E008B9DF25D1759D00C2A235 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E008B9E025D1759D00C2A235 /* Fetchable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E008BA0D25D1780000C2A235 /* RealmFetchAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				E008BA1025D1784300C2A235 /* Source */,
+				E008B9F025D1759D00C2A235 /* RealmFetchAdapter.h */,
+				E008B9B825D1758500C2A235 /* Info.plist */,
+			);
+			path = RealmFetchAdapter;
+			sourceTree = "<group>";
+		};
+		E008BA1025D1784300C2A235 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E008B9D525D1759D00C2A235 /* Configuration */,
+				E008B9D725D1759D00C2A235 /* Delegate */,
+				E008B9DA25D1759D00C2A235 /* Adapter */,
+				E008B9DF25D1759D00C2A235 /* Protocol */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E042EA822232E72F0008E567 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E042EA832232E72F0008E567 /* DemoCollectionViewCell.swift */,
+				E042EA852232E7540008E567 /* DemoHeaderCollectionReusableView.swift */,
+				E042EAAB2232EF980008E567 /* DemoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E042EA9D2232EC7C0008E567 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E042EAA42232EC7C0008E567 /* Base */,
+				E042EA9E2232EC7C0008E567 /* Collection */,
+				E042EAA22232EC7C0008E567 /* Table */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E042EA9E2232EC7C0008E567 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E042EA9F2232EC7C0008E567 /* FetchBaseCollectionViewController.swift */,
+				E042EAA02232EC7C0008E567 /* FetchSectionCollectionViewController.swift */,
+				E042EAA12232EC7C0008E567 /* FetchMonoColletionViewController.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		E042EAA22232EC7C0008E567 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				E042EAA32232EC7C0008E567 /* FetchBaseTableViewController.swift */,
+				E042EAAD2232F0660008E567 /* FetchMonoTableViewController.swift */,
+				E042EAAF2232F23B0008E567 /* FetchSectionTableViewController.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		E042EAA42232EC7C0008E567 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E042EAA52232EC7C0008E567 /* FetchBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E04EC25B22307B23005DC3D4 = {
+			isa = PBXGroup;
+			children = (
+				E09AAE9825D017F800E5D5A3 /* README.md */,
+				E008BA0925D1769100C2A235 /* Package.swift */,
+				E008BA0D25D1780000C2A235 /* RealmFetchAdapter */,
+				E04EC2DF223137EF005DC3D4 /* RealmFetchAdapterDemo */,
+				E04EC26622307B23005DC3D4 /* Products */,
+				E04EC2BC22307C21005DC3D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E04EC26622307B23005DC3D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E04EC2DE223137EF005DC3D4 /* RealmFetchAdapterDemo.app */,
+				E008B94725D1626B00C2A235 /* RealmFetchAdapter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E04EC2BC22307C21005DC3D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E04EC2DF223137EF005DC3D4 /* RealmFetchAdapterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E04EC2E0223137EF005DC3D4 /* AppDelegate.swift */,
+				E04EC2E4223137EF005DC3D4 /* Main.storyboard */,
+				E04EC2E7223137F1005DC3D4 /* Assets.xcassets */,
+				E04EC2E9223137F1005DC3D4 /* LaunchScreen.storyboard */,
+				E04EC2EC223137F1005DC3D4 /* Info.plist */,
+				E04EC30A22313B67005DC3D4 /* Model */,
+				E042EA822232E72F0008E567 /* View */,
+				E042EA9D2232EC7C0008E567 /* Controller */,
+				E008B98A25D1679300C2A235 /* UIColor+Hex.swift */,
+			);
+			path = RealmFetchAdapterDemo;
+			sourceTree = "<group>";
+		};
+		E04EC30A22313B67005DC3D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E04EC30B22313B7E005DC3D4 /* DemoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E008B94225D1626B00C2A235 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E008BA1425D1789700C2A235 /* RealmFetchAdapter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E008B94625D1626B00C2A235 /* RealmFetchAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E008B95E25D1626B00C2A235 /* Build configuration list for PBXNativeTarget "RealmFetchAdapter" */;
+			buildPhases = (
+				E008B94225D1626B00C2A235 /* Headers */,
+				E008B94325D1626B00C2A235 /* Sources */,
+				E008B94425D1626B00C2A235 /* Frameworks */,
+				E008B94525D1626B00C2A235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmFetchAdapter;
+			packageProductDependencies = (
+				E008B97625D162D800C2A235 /* DifferenceKit */,
+				E008B97825D162DB00C2A235 /* Realm */,
+				E008B97A25D162DD00C2A235 /* RealmSwift */,
+			);
+			productName = RealmFetchAdapter;
+			productReference = E008B94725D1626B00C2A235 /* RealmFetchAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E04EC2DD223137EF005DC3D4 /* RealmFetchAdapterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04EC2ED223137F1005DC3D4 /* Build configuration list for PBXNativeTarget "RealmFetchAdapterDemo" */;
+			buildPhases = (
+				E04EC2DA223137EF005DC3D4 /* Sources */,
+				E04EC2DB223137EF005DC3D4 /* Frameworks */,
+				E04EC2DC223137EF005DC3D4 /* Resources */,
+				E04EC30022313872005DC3D4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E008B95B25D1626B00C2A235 /* PBXTargetDependency */,
+			);
+			name = RealmFetchAdapterDemo;
+			productName = RealmFetchAdapterDemo;
+			productReference = E04EC2DE223137EF005DC3D4 /* RealmFetchAdapterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E04EC25C22307B23005DC3D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = Zyl;
+				TargetAttributes = {
+					E008B94625D1626B00C2A235 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E04EC2DD223137EF005DC3D4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = E04EC25F22307B23005DC3D4 /* Build configuration list for PBXProject "RealmFetchAdapter" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E04EC25B22307B23005DC3D4;
+			packageReferences = (
+				E09AAE7C25CD8EAB00E5D5A3 /* XCRemoteSwiftPackageReference "DifferenceKit" */,
+				E008B86125D15E2100C2A235 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = E04EC26622307B23005DC3D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E008B94625D1626B00C2A235 /* RealmFetchAdapter */,
+				E04EC2DD223137EF005DC3D4 /* RealmFetchAdapterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E008B94525D1626B00C2A235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EC2DC223137EF005DC3D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04EC2EB223137F1005DC3D4 /* LaunchScreen.storyboard in Resources */,
+				E04EC2E8223137F1005DC3D4 /* Assets.xcassets in Resources */,
+				E04EC2E6223137EF005DC3D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E008B94325D1626B00C2A235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E008B9F825D1759D00C2A235 /* Fetchable.swift in Sources */,
+				E008B9F725D1759D00C2A235 /* LiveData.swift in Sources */,
+				E008B9F125D1759D00C2A235 /* RealmFetchAdapterConfiguration.swift in Sources */,
+				E008B9F525D1759D00C2A235 /* TableViewRealmFetchAdapter.swift in Sources */,
+				E008B9F625D1759D00C2A235 /* CollectionRealmFetchAdapter.swift in Sources */,
+				E008B9F325D1759D00C2A235 /* RealmFetchAdapterDelegate.swift in Sources */,
+				E008B9F425D1759D00C2A235 /* RealmFetchAdapter.swift in Sources */,
+				E008B9F225D1759D00C2A235 /* RealmInstanceDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E04EC2DA223137EF005DC3D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E042EAA62232EC7C0008E567 /* FetchBaseCollectionViewController.swift in Sources */,
+				E042EAAE2232F0660008E567 /* FetchMonoTableViewController.swift in Sources */,
+				E042EAB02232F23B0008E567 /* FetchSectionTableViewController.swift in Sources */,
+				E042EAA72232EC7C0008E567 /* FetchSectionCollectionViewController.swift in Sources */,
+				E042EAAA2232EC7C0008E567 /* FetchBaseViewController.swift in Sources */,
+				E04EC30C22313B7E005DC3D4 /* DemoModel.swift in Sources */,
+				E04EC2E1223137EF005DC3D4 /* AppDelegate.swift in Sources */,
+				E042EAA82232EC7C0008E567 /* FetchMonoColletionViewController.swift in Sources */,
+				E042EAA92232EC7C0008E567 /* FetchBaseTableViewController.swift in Sources */,
+				E008B98B25D1679300C2A235 /* UIColor+Hex.swift in Sources */,
+				E042EA862232E7540008E567 /* DemoHeaderCollectionReusableView.swift in Sources */,
+				E042EAAC2232EF980008E567 /* DemoTableViewCell.swift in Sources */,
+				E042EA842232E7300008E567 /* DemoCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E008B95B25D1626B00C2A235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E008B94625D1626B00C2A235 /* RealmFetchAdapter */;
+			targetProxy = E008B95A25D1626B00C2A235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E04EC2E4223137EF005DC3D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E04EC2E5223137EF005DC3D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E04EC2E9223137F1005DC3D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E04EC2EA223137F1005DC3D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E008B95F25D1626B00C2A235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1135;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmFetchAdapter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.realmfetchadapter.com.RealmFetchAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E008B96125D1626B00C2A235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1135;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RealmFetchAdapter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.realmfetchadapter.com.RealmFetchAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E04EC27722307B24005DC3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E04EC27822307B24005DC3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E04EC2EE223137F1005DC3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQQ57C5QZQ;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = RealmFetchAdapterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RealmFetchAdapterDemo.fr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E04EC2EF223137F1005DC3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQQ57C5QZQ;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = RealmFetchAdapterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RealmFetchAdapterDemo.fr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E008B95E25D1626B00C2A235 /* Build configuration list for PBXNativeTarget "RealmFetchAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E008B95F25D1626B00C2A235 /* Debug */,
+				E008B96125D1626B00C2A235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E04EC25F22307B23005DC3D4 /* Build configuration list for PBXProject "RealmFetchAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04EC27722307B24005DC3D4 /* Debug */,
+				E04EC27822307B24005DC3D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E04EC2ED223137F1005DC3D4 /* Build configuration list for PBXNativeTarget "RealmFetchAdapterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04EC2EE223137F1005DC3D4 /* Debug */,
+				E04EC2EF223137F1005DC3D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E008B86125D15E2100C2A235 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+		E09AAE7C25CD8EAB00E5D5A3 /* XCRemoteSwiftPackageReference "DifferenceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ra1028/DifferenceKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E008B97625D162D800C2A235 /* DifferenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E09AAE7C25CD8EAB00E5D5A3 /* XCRemoteSwiftPackageReference "DifferenceKit" */;
+			productName = DifferenceKit;
+		};
+		E008B97825D162DB00C2A235 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E008B86125D15E2100C2A235 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E008B97A25D162DD00C2A235 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E008B86125D15E2100C2A235 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E04EC25C22307B23005DC3D4 /* Project object */;
+}
